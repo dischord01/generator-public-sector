@@ -7,33 +7,51 @@ First, install [Yeoman](http://yeoman.io) and generator-ansible-dev using [npm](
 
 ```bash
 npm install -g yo
-npm install -g generator-ansible-dev
+npm install -g generator-public-sector
 ```
 
+## Playbooks
 Then generate your new Ansible Playbook:
 
 ```bash
-yo ansible-dev
+yo public-sector
 ```
 
-![](img/playbook.png)
+![](img/)
 
 
 
-![](img/playbook-end.png)
+![](img/)
 
 This generator will check to see what Vagrant boxes you have installed locally and present them as a list to choose from to place in your Vagrantfile. 
 
-![](img/vagrant.png)
+![](img/)
+
+## Roles
 
 Then generate your new Ansible Role:
 
 ```bash
-yo ansible-dev:role
+yo public-sector:role
 ```
-![](img/role.png)
+![](img/)
 
-![](img/role2.png)
+![](img/)
+
+## Docs
+
+This will template out a OpenShift style asciidoc/asciibinder template that will do a git init, git add, git commit, and then run asciibinder to initialize the build out of the site into html under `_preview`. 
+
+```bash
+yo public-sector:doc
+```
+
+## AWS S3
+
+<Inprogress>
+
+Deploy to S3 
+
 
 
 Then start up your new Vagrant box.

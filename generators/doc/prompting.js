@@ -19,22 +19,9 @@ module.exports = function() {
                     default: 'Coming Soon'
                 }, {
                     type: 'input',
-                    name: 'domain_name',
-                    message: 'What is the domain name this will be deployed to?',
-                    default: 'redhatgov.io'
-                }, {
-                    type: 'input',
                     name: 'domain_zone',
                     message: 'What is the domain zone id this will be deployed to?',
                     default: 'XXXXXXX'
-                }, {
-                    type: 'input',
-                    name: 'aws_access',
-                    message: 'What is the aws_access_key_id to use for deploying to S3?',
-                }, {
-                    type: 'input',
-                    name: 'aws_secret',
-                    message: 'What is the aws_secret_access_key to use for deploying to S3?',
                 }];
 
                 return this.prompt(prompts).then(function(props) {
@@ -45,3 +32,7 @@ module.exports = function() {
 
                 //End Prompting  
 };
+
+
+
+                
